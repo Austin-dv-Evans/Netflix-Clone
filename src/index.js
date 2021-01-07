@@ -1,14 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {render} from 'react-dom';
+import {GlobalStyles} from './global-styles'
+import 'normalize.css'
+import App from './app';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+render(
+    <>
+        <GlobalStyles/>
+            <App />
+    </>,
+    document.getElementById('root')
+    
+
 );
 
 // If you want to start measuring performance in your app, pass a function
